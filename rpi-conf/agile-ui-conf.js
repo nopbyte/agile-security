@@ -40,7 +40,7 @@ module.exports = {
   "http_port": 3000,
   "https_port": 1444,
   "https_port_with_client": 1443,
-  "enabledStrategies": ["agile-local"],
+  "enabledStrategies": ["local"],
   "cors": ["http://set-automatically:2000","http://set-automatically:3000"],
   "gui": {
     "entities": {

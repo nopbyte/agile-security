@@ -7,7 +7,7 @@ This chapter covers the configuration of AGILE IDM, depending on which IdPs are 
 Many IdPs can be configured for AGILE-IDM; however, they are only attempted to be loaded when their name is in the list called "enabledStrategies" in the configuration file:
 At the moment, the following strategy names are possible:
 
-  * agile-local
+  * local
   * github
   * google
   * webid
@@ -291,7 +291,7 @@ In this object you can place the path to your own server key and certificate.  H
 
 ### Agile-local authentication
 
-IDM also offers a local authentication component. This component prompts the user for a unsername and password. The agile-local authentication relies on the entity storage, where all the entities are placed, to find entities of type user. They need to include a password.
+IDM also offers a local authentication component. This component prompts the user for a unsername and password. The local authentication relies on the entity storage, where all the entities are placed, to find entities of type user. They need to include a password.
 
 ### PAM authentication
 

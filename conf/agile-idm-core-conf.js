@@ -419,7 +419,7 @@ module.exports = {
   "configure_on_boot": {
     "user": [{
       "user_name": "bob",
-      "auth_type": "agile-local",
+      "auth_type": "local",
       "role": "admin",
       "password": "secret"
     }],

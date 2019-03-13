@@ -359,7 +359,7 @@ module.exports = {
       },
       "auth_type": {
         "type": "string",
-        "enum": ["agile-local"]
+        "enum": ["local"]
       },
       "password": {
         "type": "string"
@@ -435,7 +435,7 @@ module.exports = {
   "configure_on_boot": {
     "user": [{
       "user_name": "agile",
-      "auth_type": "agile-local",
+      "auth_type": "local",
       "role": "admin",
       "password": "secret",
       "credentials": {
