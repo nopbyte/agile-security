@@ -47,7 +47,7 @@ To debug the agile-idm-core or the agile-idm-storage components that are within 
 
 [User Authentication](https://github.com/Agile-IoT/agile-security/blob/master/docs/authentication.md)
 
-[Identity Model] (https://github.com/Agile-IoT/agile-security/blob/master/docs/identity-model.md)
+[Identity Model](https://github.com/Agile-IoT/agile-security/blob/master/docs/identity-model.md)
 
 [Configuration of Identity Providers (such as google, github, pam authentication, etc)](https://github.com/Agile-IoT/agile-security/blob/master/docs/idps-configuration.md)
 
