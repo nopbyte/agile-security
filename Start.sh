@@ -5,7 +5,7 @@ CONF=/root/idm.conf/
 
 if [ ! -f "$CONF/agile-idm-core-conf.js" ]; then
   echo "folder not there for conf"
-  cp -r rpi-conf/* $CONF
+  cp -r conf/* $CONF
 fi
 
 

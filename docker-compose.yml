@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+
+  agile-security:
+    container_name: agile-security
+    #image: future-semiotics-docker-hub/semiotics-security
+    build: ./
+    hostname: agile-security
+    volumes:
+      - ./data/security/idm/conf:/root/idm.conf
+      - ./data/security/idm/db:/root/idm.db
+    environment:
+      - DOCKER_CONF=/root/idm.conf
+      - AGILE_HOST=localhost
+    ports:
+      - 3000:3000/tcp
+      - 1444:1444/tcp
+      - 1443:1443/tcp
+    restart: always
+

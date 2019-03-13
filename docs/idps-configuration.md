@@ -10,7 +10,6 @@ At the moment, the following strategy names are possible:
   * local
   * github
   * google
-  * webid
   * pam
 
 Since AGILE-IDM should not let just any user with a valid account in github, google, etc log in in every gateway, the users which are allowed to log in in a particular gateway need to be registered previously, providing username and authentication type. For this the scripts in the folder scripts can be used.
