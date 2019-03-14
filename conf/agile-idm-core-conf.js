@@ -434,15 +434,14 @@ module.exports = {
   }],
   "configure_on_boot": {
     "user": [{
-      "user_name": "agile",
+      "user_name": "admin",
       "auth_type": "local",
       "role": "admin",
       "password": "secret",
       "credentials": {
-        "xively": {
-          "xivelymaster": "NU9grueAtYdQE0L7DdFlID3NBZuQn7tyyNvjXUvqoQnJ2rox",
-          "xivelyproduct": "Y1o-jUXIj66T1Ekb_Tjx",
-          "xivelysecret": "067d1c0ad522fa0315782888b4cf89741b0369ec"
+        "service1": {
+          "key1": "NU9grueAtYdQE0L7DdFlID3NBZuQn7tyyNvjXUvqoQnJ2rox",
+          "key2": "Y1o-jUXIj66T1Ekb_Tjx"
         }
       }
     }],
