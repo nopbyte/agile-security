@@ -1,12 +1,12 @@
 var path = process.cwd();
 module.exports = {
   "storage": {
-    "dbName": "/root/idm.db/database_"
+    "dbName": process.env.DATA+"/database_"
   },
   upfront_storage: {
     module_name: "agile-upfront-leveldb",
     type: "external",
-    dbName: "/root/idm.db/database_",
+    dbName: process.env.DATA+"/database_",
     collection: "policies",
   },
   upfront_locks: path + "/node_modules/agile-upfront-locks/Locks",
@@ -447,10 +447,19 @@ module.exports = {
       }
     }],
     "client": [{
-     "id": "MyAgileClient2",
-      "name": "MyAgileClient2",
+     "id": "AuthCodeClient",
+      "name": "AuthCodeClient",
       "clientSecret": "Ultrasecretstuff",
       "redirectURI": "http://localhost:3002/auth/example/callback"
+    },{
+       "id": "ImplicitAuthClient",
+        "name": "ImplicitAuthClient",
+        "redirectURI": "http://localhost:2000/"
+    },{
+        "id": "ClientCredetnialsClient",
+        "name": "ClientCredetnialsClient",
+        "clientSecret": "Ultrasecretstuff"
+
     }],
     "gateway": [{
       "id": "self",
@@ -458,7 +467,7 @@ module.exports = {
     }]
   },
   "audit": {
-    dbName: "/root/idm.db/database_",
+    dbName: process.env.DATA+"/database_",
     //according to https://www.npmjs.com/package/timeframe-to-seconds,
     timeframe: '1m',
     //DETAILED=0, ONLY_IMPORTANT_STUFF=1

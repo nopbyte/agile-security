@@ -8,14 +8,14 @@ services:
     build: ./
     hostname: agile-security
     volumes:
-      - ./data/security/idm/conf:/root/idm.conf
-      - ./data/security/idm/db:/root/idm.db
+      - ./data/security/conf:/root/idm.conf
+      - ./data/security/db:/root/idm.db
     environment:
-      - DOCKER_CONF=/root/idm.conf
+      - CONF=/root/idm.conf
+      - DATA=/root/idm.db
       - AGILE_HOST=localhost
     ports:
       - 3000:3000/tcp
       - 1444:1444/tcp
       - 1443:1443/tcp
     restart: always
-
