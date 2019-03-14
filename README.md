@@ -41,6 +41,26 @@ If no variable is set, or if any other value different than 1 is set, this compo
 
 To debug the agile-idm-core or the agile-idm-storage components that are within agile-security please set the environment variables DEBUG_IDM_CORE  or DEBUG_IDM_STORAGE to 1 respectively. These two components will log to stdout debugging information.
 
+### Quick Start
+
+You can run this component by doing
+
+```
+npm install
+npm start
+```
+
+Also, if you want to run it as a container you can use the docker-compose file included in this repository in the following way
+
+```
+docker-compose build
+docker-compose up
+```
+
+Afterwards, you will have a version of agile-security running in port 3000 in both cases. However, you still need to have an application to rely on agile-security as an IdP or as a PDP.  For this, please check our [samples](https://github.com/nopbyte/agile-security-samples) 
+
+
+
 ### Additional Documentation
 
 [Architecture](https://github.com/Agile-IoT/agile-security/blob/master/docs/architecture.md)
