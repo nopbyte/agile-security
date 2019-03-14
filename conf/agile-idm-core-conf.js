@@ -449,14 +449,14 @@ module.exports = {
      "id": "AuthCodeClient",
       "name": "AuthCodeClient",
       "clientSecret": "Ultrasecretstuff",
-      "redirectURI": "http://localhost:3002/auth/example/callback"
+      "redirectURI": "http://set-automatically:3002/auth/example/callback"
     },{
        "id": "ImplicitAuthClient",
         "name": "ImplicitAuthClient",
-        "redirectURI": "http://localhost:2000/"
+        "redirectURI": "http://set-automatically:2000/"
     },{
-        "id": "ClientCredetnialsClient",
-        "name": "ClientCredetnialsClient",
+        "id": "ClientCredentialsClient",
+        "name": "ClientCredentialsClient",
         "clientSecret": "Ultrasecretstuff"
 
     }],

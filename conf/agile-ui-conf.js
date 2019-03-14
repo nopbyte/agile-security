@@ -1,7 +1,8 @@
+var path = process.cwd();
 module.exports = {
   "gateway_id": "1",
   "token-storage": {
-    "dbName": "/root/idm.db/database_web",
+    "dbName": process.env.DATA+"/database_web",
     "createTables": true
   },
   "failureRedirect": "/login",
